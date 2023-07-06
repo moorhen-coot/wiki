@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Using Moorhen in a react app"
-date: Thu  6 Jul 2023 19:59:21 BST
+date: Thu  6 Jul 20:59:21 GMT 2023 
 ---
 
 ## Scope
