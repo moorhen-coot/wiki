@@ -7,7 +7,7 @@ date: Sun 16 Apr 20:20:01 GMT 2023
 ## Scope
 
 [Moorhen](2023-04-16-moorhen.md) is built on React, and has been designed to be readily inserted
-into React apps to provide Moorhen's capabilities for viewing and editing macromolecular structures.  This tutorial is part of a series that will demonstrate how to 
+into React apps to provide Moorhen's capabilities for viewing and editing macromolecular structures.  This tutorial is part of a series that will show how to 
 
 1. Build a simple Moorhen app, starting from `create-react-app` (this tutorial) 
 2. Specialize that app to pull in structures and maps from an API [tutorial 2](), and
@@ -51,7 +51,7 @@ A Moorhen app requires certain static assets to be available from the app's HTTP
 
     cp -r node_modules/moorhen/baby-gru ./public/
 
-To protect javascript app users,  browsers allow the enforcement of a `cross origin policy` to avoid (for example) the execution of javascript code injected by a malicious player. This restriction means we have to do two things to configure the create-react-app development server to insert appropriate headers:
+To protect javascript app users, browsers allow the enforcement of a `cross origin policy` that mitigates (for example) the execution of javascript code injected by a malicious player. This restriction means we have to configure the create-react-app development server to insert some headers:
 
     cat > src/setupProxy.js << EOF
     module.exports = function (app) {
@@ -63,9 +63,9 @@ To protect javascript app users,  browsers allow the enforcement of a `cross ori
     };   
     EOF 
 
-The main Moorhen UI thread needs to be able to use some of the web-assembled crystallography tools, and enabling this requires an edit to the file `public/index.html`
+The main Moorhen UI thread needs to be able to use certain web-assembled crystallography tools, and enabling this requires an edit to the file `public/index.html`
 
-In that file, after the comment stanza:
+In `public/index.html`, after the comment stanza:
 
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
@@ -107,11 +107,11 @@ Insert the following two blocks of code:
 
 (Required to load crystallographic tools for the main GUI thread)
 
-Finally, we need to replace the default create-react-app content with a Moorhen view in file `src/App.js`.  To achieve this, we have to add imports into the top of the file:
+Finally, we need to replace the default create-react-app content with a Moorhen view in file `src/App.js`.  To achieve this, we have to add imports into the top of `src/App.js`:
 
     import {MoorhenContext, MoorhenContainer} from 'moorhen'
 
-And then replace the create-react-app content:
+And then replace the default create-react-app content:
 
     <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -134,7 +134,7 @@ with the following content
         <MoorhenContainer urlPrefix="."/>
     </MoorhenContextProvider>
 
-Now if you reload the page in your default web browser, you should be seeing the base moorhen app:
+Now if you reload the page in your  web browser, you should be seeing the base moorhen app:
 
 ![Base moorhen app](../../images/base-moorhen-app.jpg)
 
