@@ -8,7 +8,7 @@ Welcome to Moorhen ("Coot on the Web").
 
 ## Getting Started
 
-![layout](https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/web/tutorial/images/moorhen-gui-items.png)
+![layout](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/moorhen-gui-items.png)
 
 Open a web browser window and point it at [cloud.ccp4.ac.uk](https://cloud.ccp4.ac.uk/), then login using your username and password. Once you are in the project folder, click on the "Tutorials" button on the top right. This will open a dialog with a file browser. To reach the hop-on project for this tutorial, follow this path:
 
