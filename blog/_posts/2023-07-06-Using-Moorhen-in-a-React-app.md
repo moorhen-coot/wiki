@@ -4,8 +4,6 @@ title: "Using Moorhen in a react app"
 date: Thu 6 Jul 20:59:21 GMT 2023
 ---
 
-Inserting Moorhen into your React app.
-
 ## Scope
 
 [Moorhen](https://moorhen-coot.github.io/blog/2023/04/16/moorhen.html) is built on React, and has been designed to be readily inserted
