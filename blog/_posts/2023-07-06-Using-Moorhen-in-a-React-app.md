@@ -31,7 +31,7 @@ This will create a minimal create-react-app called `my-moorhen-app`, the composi
 
 You should see the default `create-react-app` webpage:
 
-![Default create react app](../../images/create-react-app.jpg)
+![Default create react app](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/create-react-app.jpg)
 
 A few actions and edits are needed to make this a Moorhen application. The first is to use the Node Package Manager (npm) to install Moorhen and its dependencies.
 
@@ -136,7 +136,7 @@ with the following content
 
 Now if you reload the page in your  web browser, you should be seeing the base moorhen app:
 
-![Base moorhen app](../../images/base-moorhen-app.jpg)
+![Base moorhen app](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/base-moorhen-app.jpg)
 
 
 
