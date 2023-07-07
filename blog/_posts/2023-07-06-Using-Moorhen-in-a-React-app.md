@@ -15,7 +15,7 @@ into React apps to provide Moorhen's capabilities for viewing and editing macrom
 
 ## Background and requirements
 
-To follow this tutorial, you will needs a computer with [NodeJS](https://nodejs.org) installed, and  access to a (code) editor such as [Visual Studio Code](https://code.visualstudio.com).
+To follow this tutorial, you will needs a computer with [NodeJS](https://nodejs.org) installed, and access to a (code) editor such as [Visual Studio Code](https://code.visualstudio.com).
 
 ## Getting started
 
