@@ -6,7 +6,7 @@ date: Thu 6 Jul 20:59:21 GMT 2023
 
 ## Scope
 
-[Moorhen](https://moorhen-coot.github.io/blog/2023/03/22/moorhen.html) is built on React, and has been designed to be readily inserted
+[Moorhen](https://moorhen-coot.github.io/wiki/2023/03/22/What-is-Moorhen.html) is built on React, and has been designed to be readily inserted
 into React apps to provide Moorhen's capabilities for viewing and editing macromolecular structures.  This tutorial is part of a series that will show how to 
 
 1. Build a simple Moorhen app, starting from `create-react-app` (this tutorial) 
