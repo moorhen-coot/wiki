@@ -55,9 +55,9 @@ A Moorhen app requires certain static assets to be available from the app's HTTP
 
 ## Configuring the proxy server
 
-To protect javascript app users, browsers allow the enforcement of a `cross origin policy` that mitigates (for example) the execution of javascript code injected by a malicious player. This restriction means we have to configure the create-react-app development server to insert some headers:
+To protect javascript app users, browsers allow the enforcement of a `cross origin policy` that mitigates (for example) the execution of javascript code injected by a malicious player. This restriction means we have to configure the create-react-app development server to insert some headers.
+TO do this, create a file `setupProxy.js` in the `src` subdirectory of `my-moorhen-app` with contents:
 
-    cat > src/setupProxy.js << EOF
     module.exports = function (app) {
         app.use(function (req, res, next) {
             res.setHeader("Cross-Origin-Opener-Policy", "same-origin");
@@ -65,8 +65,6 @@ To protect javascript app users, browsers allow the enforcement of a `cross orig
             next();
         });
     };   
-    EOF 
-
 
 ## Patching index.html
 
