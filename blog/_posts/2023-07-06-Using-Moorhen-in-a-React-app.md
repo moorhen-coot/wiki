@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Using Moorhen in a react app"
+title: "Using Moorhen in a react app"
 date: Thu 6 Jul 20:59:21 GMT 2023
 ---
 
