@@ -35,6 +35,8 @@ You should see the default `create-react-app` webpage:
 
 A few actions and edits are needed to make this a Moorhen application. The first is to use the Node Package Manager (npm) to install Moorhen and its dependencies.
 
+## Getting and installing Moorhen
+
 We are exploring the licensing position of making moorhen available as an npm package.  For now, the package is available as a gzipped tar file from the principal curator of the package <filomeno.sanchezrodriguez@york.ac.uk>.  
 
 After obtaining the moorhen package, copy it into the root directory of your `my-moorhen-app`
@@ -51,6 +53,8 @@ A Moorhen app requires certain static assets to be available from the app's HTTP
 
     cp -r node_modules/moorhen/baby-gru ./public/
 
+## Configuring the proxy server
+
 To protect javascript app users, browsers allow the enforcement of a `cross origin policy` that mitigates (for example) the execution of javascript code injected by a malicious player. This restriction means we have to configure the create-react-app development server to insert some headers:
 
     cat > src/setupProxy.js << EOF
@@ -62,6 +66,9 @@ To protect javascript app users, browsers allow the enforcement of a `cross orig
         });
     };   
     EOF 
+
+
+## Patching index.html
 
 The main Moorhen UI thread needs to be able to use certain web-assembled crystallography tools, and enabling this requires an edit to the file `public/index.html`
 
@@ -106,6 +113,8 @@ Insert the following two blocks of code:
     <script src="%PUBLIC_URL%/baby-gru/wasm/web_example.js"></script>
 
 (Required to load crystallographic tools for the main GUI thread)
+
+## Adding Moorhen components into App.js
 
 Finally, we need to replace the default create-react-app content with a Moorhen view in file `src/App.js`.  To achieve this, we have to add imports into the top of `src/App.js`:
 
