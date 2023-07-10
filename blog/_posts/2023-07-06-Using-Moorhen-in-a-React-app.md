@@ -116,7 +116,7 @@ Insert the following two blocks of code:
 
 Finally, we need to replace the default create-react-app content with a Moorhen view in file `src/App.js`.  To achieve this, we have to add imports into the top of `src/App.js`:
 
-    import {MoorhenContext, MoorhenContainer} from 'moorhen'
+    import {MoorhenContextProvider, MoorhenContainer} from 'moorhen'
 
 And then replace the default create-react-app content:
 
