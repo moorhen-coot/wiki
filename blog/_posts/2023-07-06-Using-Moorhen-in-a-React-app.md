@@ -145,6 +145,7 @@ Now if you reload the page in your  web browser, you should be seeing the base m
 
 ![Base moorhen app](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/base-moorhen-app.jpg)
 
+We have pushed the resulting project to a git repository at git@github.com:moorhen-coot/Moorhen-react-dev-tutorial-1.git. Note that you will have to obtain a copy of moorhen-0.1.0.tgz and carry out the npm install step for this repository to provide a working copy of the base app.
 
 
 
