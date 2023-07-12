@@ -35,19 +35,19 @@ You should see the default `create-react-app` webpage:
 
 A few actions and edits are needed to make this a Moorhen application. The first is to use the Node Package Manager (npm) to install Moorhen and its dependencies.
 
-## Getting and installing Moorhen
+## Obtaining and installing Moorhen
 
-We are exploring the licensing position of making moorhen available as an npm package.  For now, the package is available as a gzipped tar file from the principal curator of the package <filomeno.sanchezrodriguez@york.ac.uk>.  
+We are exploring the licensing position of making moorhen available as an npm package.  For now, the package is available as a gzipped tar file from a [github release page](https://github.com/moorhen-coot/Moorhen/releases/tag/v0.2). If you encounter problems accessing this, please contact the principal curator of the package <filomeno.sanchezrodriguez@york.ac.uk>.  
 
 After obtaining the moorhen package, copy it into the root directory of your `my-moorhen-app`
 
-    cp path_to/moorhen-0.1.0.tgz .
+    cp path_to/moorhen-0.2.0.tgz .
 
-(where path_to is used to specify the directory in which you ahve downloaded the gzipped tar file)
+(where `path_to` specifies the directory in which you have downloaded the gzipped tar file)
 
 The next action is to use the node package manager to install it, and to retrieve its dependencies
 
-    npm install ./moorhen-0.1.0.tgz
+    npm install ./moorhen-0.2.0.tgz
 
 A Moorhen app requires certain static assets to be available from the app's HTTP server at a path beginning `/baby-gru`.  To place those files in the appropriate place for the create-react-app build system, a copy command is required:
 
@@ -145,7 +145,7 @@ Now if you reload the page in your  web browser, you should be seeing the base m
 
 ![Base moorhen app](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/base-moorhen-app.jpg)
 
-We have pushed the resulting project to a git repository at git@github.com:moorhen-coot/Moorhen-react-dev-tutorial-1.git. Note that you will have to obtain a copy of moorhen-0.1.0.tgz and carry out the npm install step for this repository to provide a working copy of the base app.
+We have pushed the resulting project to a git repository at git@github.com:moorhen-coot/Moorhen-react-dev-tutorial-1.git. Note that you will have to obtain a copy of moorhen-0.2.0.tgz and carry out the npm install step for this repository to provide a working copy of the base app.
 
 
 
