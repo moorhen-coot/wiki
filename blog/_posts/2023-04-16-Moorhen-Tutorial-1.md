@@ -14,7 +14,7 @@ There are two ways you can access Moorhen. One is using it within CCP4 Cloud the
 
 Open a web browser window and point it at [cloud.ccp4.ac.uk](https://cloud.ccp4.ac.uk/), then login using your username and password. Once you are in the project folder, click on the "Tutorials" button on the top right. This will open a dialog with a file browser. To reach the hop-on project for this tutorial, follow this path:
 
-  - **upper directory** &rarr; **Workshops** &rarr; **MCCS2023** &rarr; **WebCoot** &rarr; **MCCS_WebCoot**
+  - **4. Refinement** &rarr; **T4_006. Fix up the Cyclin-Dependent Kinase with Moorhen**
 
 Now open the imported project. This imported project consists of a model for a Kinase Inhibitor together with its experimental data. 
 
