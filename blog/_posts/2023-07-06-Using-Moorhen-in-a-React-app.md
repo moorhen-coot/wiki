@@ -39,7 +39,7 @@ A few actions and edits are needed to make this a Moorhen application. The first
 
 We are exploring the licensing position of making moorhen available as an npm package.  For now, the package is available as a gzipped tar file from a [github release page](https://github.com/moorhen-coot/Moorhen/releases/tag/v0.2). If you encounter problems accessing this, please contact the principal curator of the package <filomeno.sanchezrodriguez@york.ac.uk>.  
 
-After obtaining the moorhen package, copy it into the root directory of your `my-moorhen-app`
+After obtaining the moorhen package, copy it into the root directory of your `my-moorhen-app`. At the time of writing this tutorial the latest release was v0.2.0, so you may need to change the file name accordingly.
 
     cp path_to/moorhen-0.2.0.tgz .
 
@@ -56,7 +56,7 @@ A Moorhen app requires certain static assets to be available from the app's HTTP
 ## Configuring the proxy server
 
 To protect javascript app users, browsers allow the enforcement of a `cross origin policy` that mitigates (for example) the execution of javascript code injected by a malicious player. This restriction means we have to configure the create-react-app development server to insert some headers.
-TO do this, create a file `setupProxy.js` in the `src` subdirectory of `my-moorhen-app` with contents:
+To do this, create a file `setupProxy.js` in the `src` subdirectory of `my-moorhen-app` with contents:
 
     module.exports = function (app) {
         app.use(function (req, res, next) {
@@ -116,7 +116,7 @@ Insert the following two blocks of code:
 
 Finally, we need to replace the default create-react-app content with a Moorhen view in file `src/App.js`.  To achieve this, we have to add imports into the top of `src/App.js`:
 
-    import {MoorhenContextProvider, MoorhenContainer} from 'moorhen'
+    import {MoorhenReduxProvider, MoorhenContainer} from 'moorhen'
 
 And then replace the default create-react-app content:
 
@@ -137,15 +137,15 @@ And then replace the default create-react-app content:
 
 with the following content
 
-    <MoorhenContextProvider>
+    <MoorhenReduxProvider>
         <MoorhenContainer urlPrefix="."/>
-    </MoorhenContextProvider>
+    </MoorhenReduxProvider>
 
 Now if you reload the page in your  web browser, you should be seeing the base moorhen app:
 
 ![Base moorhen app](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/base-moorhen-app.jpg)
 
-We have pushed the resulting project to a git repository at git@github.com:moorhen-coot/Moorhen-react-dev-tutorial-1.git. Note that you will have to obtain a copy of moorhen-0.2.0.tgz and carry out the npm install step for this repository to provide a working copy of the base app.
+We have pushed the resulting project to a git repository at git@github.com:moorhen-coot/Moorhen-react-dev-tutorial-1.git. Note that you will have to obtain a copy of moorhen-X.X.X.tgz and carry out the npm install step for this repository to provide a working copy of the base app.
 
 
 
