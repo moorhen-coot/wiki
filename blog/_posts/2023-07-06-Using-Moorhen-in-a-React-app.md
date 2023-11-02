@@ -7,7 +7,7 @@ date: Thu 6 Jul 20:59:21 GMT 2023
 ## Scope
 
 [Moorhen](https://moorhen-coot.github.io/wiki/2023/03/22/What-is-Moorhen.html) is built on React, and has been designed to be readily inserted
-into React apps to provide Moorhen's capabilities for viewing and editing macromolecular structures.  This tutorial is part of a series that will show how to 
+into React apps to provide Moorhen's capabilities for viewing and editing macromolecular structures.  This tutorial is part of a series that will show how to:
 
 1. Build a simple Moorhen app, starting from `create-react-app` (this tutorial) 
 2. Specialize that app to pull in structures and maps from an API [tutorial 2](), and
@@ -58,13 +58,15 @@ A Moorhen app requires certain static assets to be available from the app's HTTP
 To protect javascript app users, browsers allow the enforcement of a `cross origin policy` that mitigates (for example) the execution of javascript code injected by a malicious player. This restriction means we have to configure the create-react-app development server to insert some headers.
 To do this, create a file `setupProxy.js` in the `src` subdirectory of `my-moorhen-app` with contents:
 
+```javascript
     module.exports = function (app) {
         app.use(function (req, res, next) {
             res.setHeader("Cross-Origin-Opener-Policy", "same-origin");
             res.setHeader("Cross-Origin-Embedder-Policy", "require-corp");
             next();
         });
-    };   
+    };
+```
 
 ## Patching index.html
 
@@ -72,6 +74,7 @@ The main Moorhen UI thread needs to be able to use certain web-assembled crystal
 
 In `public/index.html`, after the comment stanza:
 
+```html
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -81,16 +84,17 @@ In `public/index.html`, after the comment stanza:
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-
+```
 Insert the following two blocks of code:
 
+```html
     <script>
       // See https://github.com/facebook/react/issues/20829#issuecomment-802088260
       if (!crossOriginIsolated) SharedArrayBuffer = ArrayBuffer;
     </script>
-
+```
 (Required to deal with a cross origin issue)
-  
+```html
     <!--Here some imports and actions to make some crystallographic logic available to the main UI thread (as opposed to the CootWorker)-->
     <script>
       window.onload = () => {
@@ -109,17 +113,17 @@ Insert the following two blocks of code:
     </script>
 
     <script src="%PUBLIC_URL%/baby-gru/wasm/web_example.js"></script>
-
+```
 (Required to load crystallographic tools for the main GUI thread)
 
 ## Adding Moorhen components into App.js
 
 Finally, we need to replace the default create-react-app content with a Moorhen view in file `src/App.js`.  To achieve this, we have to add imports into the top of `src/App.js`:
-
+```javascript
     import {MoorhenReduxProvider, MoorhenContainer} from 'moorhen'
-
+```
 And then replace the default create-react-app content:
-
+``` html
     <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -134,14 +138,14 @@ And then replace the default create-react-app content:
           Learn React
         </a>
     </header>
-
+```
 with the following content
-
+```javascript
     <MoorhenReduxProvider>
-        <MoorhenContainer urlPrefix="."/>
+        <MoorhenContainer/>
     </MoorhenReduxProvider>
-
-Now if you reload the page in your  web browser, you should be seeing the base moorhen app:
+```
+We will talk more about `MoorhenReduxProvider` and `MoorhenContainer` and how you can use them to fetch data from Moorhen in [tutorial 2](https://moorhen-coot.github.io/wiki/2023/07/06/Fetch-data-from-Moorhen-in-a-react-app.html). Now if you reload the page in your  web browser, you should be seeing the base moorhen app:
 
 ![Base moorhen app](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/base-moorhen-app.jpg)
 
