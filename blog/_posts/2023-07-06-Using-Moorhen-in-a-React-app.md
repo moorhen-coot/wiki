@@ -10,7 +10,7 @@ date: Thu 6 Jul 20:59:21 GMT 2023
 into React apps to provide Moorhen's capabilities for viewing and editing macromolecular structures.  This tutorial is part of a series that will show how to:
 
 1. Build a simple Moorhen app, starting from `create-react-app` (this tutorial) 
-2. Specialize that app to pull in structures and maps from an API [tutorial 2](), and
+2. Specialize that app to pull in structures and maps from an API [tutorial 2](https://moorhen-coot.github.io/wiki/2023/07/06/Fetch-data-from-Moorhen-in-a-react-app.html), and
 3. Provide dedicated UI elements to navigate around features of a structure within the Moorhen component [tutorial 3]()
 
 ## Background and requirements
