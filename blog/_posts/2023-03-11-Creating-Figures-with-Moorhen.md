@@ -157,9 +157,11 @@ Moorhen has now combined the van der Waals surfaces of the atoms in the molecule
 
 ## Maps and map masking
 
-Style, colour, transparency, contour level, radius, 
+In progress
 
 ## Validation and Analysis
+
+In progress
 
 ## Clip, Fog and Lighting Effects
 
@@ -224,4 +226,55 @@ Additionally, you can find more settings in the "Preferences" menu under the Moo
 
 ## Saving your image
 
+When you are happy with your picture there are a few ways of creating your final image: you can simply take screenshot using 
+tools provided by your operating system - Print Screen key on Windows, Shift+Cmd+4 on macOS, etc.; hit the "S" key in Moorhen; "File",
+"Screenshot". 
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Screenshot-Menu.png)
+
+The last 2 options do the same thing, they instruct Moorhen to create a high resolution image. The high resolution image will
+be either 4096 pixels wide or 4096 pixels high d, with the other dimension scaled to match the shape of your Moorhen window. The file will 
+automatically downloaded by your browser to your normal download location and named something like "moorhen.png". Subsequently saved images
+will be named similarly with a number inserted into the name - the way this is done depends on your browser. e.g. this shows the recently
+saved images by a user who has saved 44 images with Moorhen:
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Recent-Screenshots.png)
+
 ## Video Recording
+
+"File", "Record a video" will put Moorhen into a recording mode where it will record eveything that you do into a video - just the 
+molecular graphics, not the menus or dialogs: 
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Video-Menu.png)
+
+When recording a box with a flashing red "light" appears at the top of the screen:
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Video-Recording.png)
+
+When you wish to stop recording, hit the square stop button ![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Stop-Button.png) at the right hand side of the recording box. A file name "moorhen.webm" (with
+numbers ascending in the same ways as screenshot naming) will be download to your downloads location. 
+This file can be viewed in most browsers and converted to other formats with a variety of tools.
+
+## Saving your Work for later
+
+If you close your browser, or tab, or navigate away from Moorhen you may lose all your work. You can save your progress in two ways:
+
+* "File", "Save backup"
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Save-Backup.png)
+
+This will save backup in the web browsers storage. The backup can be recovered with
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Recover-Backup.png)
+
+Select a backup from the list and then click "OK" to load. *This only works on the computer/browser you saved on and may be deleted
+if you clear the browsers cache.*
+
+* "File", "Download session"
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Download-Session.png)
+
+This will download a dile named "session.json" (again with numbers like screenshots and videos). This file can be moved to other
+computers, etc. and reloaded anywhere with "File", "Load from stored session":
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Upload-Session.png)
