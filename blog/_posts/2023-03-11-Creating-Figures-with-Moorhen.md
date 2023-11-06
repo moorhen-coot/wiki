@@ -56,6 +56,44 @@ The lower section shows the current colour rules. Each colour rule  supersedes t
 
 ## Additional Representations
 
+Sometimes you may wish to add additional representations, e.g. to display only a subset of the atoms in a particular style. To do this, click
+on the "+" button to the right of the main representation buttons. A new dialog will appear.
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Additional-Repr.png)
+
+In the new dialog you can select "Style" and "Residue selection" for the new representation.
+Change "Selection" to "Spheres" and "Residue selection" to "Residue Range". A "Chain" selector and sequence viewer will appear.
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Additional-Repr-Sequence.png)
+
+The sequence viewer may be scrolled left and right by clicking on it and dragging. Move it around and then click on residue number 50 (R), then **shift-click** on residue number 65 (K). Two triangles connected by a line will appear - this represents the residue range selected.
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Additional-Repr-Sequence-Selected.png)
+
+Then click on the "Create" button at the bottom of the dialog. The new spheres will be drawn and a button labelled "Spheres //A/50-65"
+which allows you to hide/show the spheres (like the main representations) will be shown in the "Models" dialog.
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Additional-Repr-Spheres.png)
+
+The new button also has "pen" and "dustbin" parts. The "pen" allows you to edit the atom selection/colouring/style;
+the "dustbin" deletes the new representation. Click on the pen and then uncheck the "Apply general colours settings" button. You
+will a new drop down menu, this will be set to "User defined colour":
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Additional-Repr-Custom-Colour.png)
+
+Click on the green square to the right of this menu. A colour picker will appear. Pick a new colour (e.g. a shade of purple) 
+and then click "Apply". Your spheres (and the representation hide/show button) will change colour.
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Additional-Repr-Custom-Colour-Applied.png)
+
+Now hide the new spheres and the default bond representations by clicking the appropriate buttons in the "Models" dialog. Then create a
+new "Ribbons" representation coloured by temperate factor. First click on "+" again and then use the following settings:
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Additional-Repr-Ribbon-BFactor-Settings.png)
+
+Then click "Apply":
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Additional-Repr-Ribbon-BFactor.png)
+
 ## Ball and Stick Variants
 
 Bond width options, etc.
