@@ -121,7 +121,28 @@ Now change "Bond Smoothness" to smooth to produce a much rounder cylinder:
 
 ## Surfaces
 
-Molecular, gaussian
+While completing previous sections you may have noticed buttons labelled with "Surf." and "Gauss." among the different representation styles for a molecule. These buttons let you display your model as a surface. Let's first try to draw a Gaussian surface. Go to the "Models" window and click on the button labelled with "Gauss.".
+
+_Moorhen displays the model as a Gaussian surface._
+
+![gauss. surf. screenshot](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Gauss-Surf.png)
+Note: Notice how we have turned off Bond representations to have a better view of the surface. We have also changed the "Scene preset" to figure making.
+
+Moorhen lets you modify the different parameters used to calculate this surface (and therefore the way it looks) under the settings menu. To open this menu, click on the wheel button in the "Models" window. You can find this button right under the colour schemes button and on top of the additional represetations button.
+
+_Moorhen displays a popover with different representation settings._
+
+![gauss. surf. settings screenshot](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Gauss-Surf-Settings.png)
+
+Right under the settings for the bond representations and above the settings for model symmetry, we find a series of sliders for different parameters labelled "Gauss. Surf." Try to move the different sliders and see how the Gaussian surfaces changes. By applying these changes Moorhen gives us full control of how the surface is contoured.
+
+Let's now try a different type of molecule surface representation. Turn off the Gaussian surface by clicking on the "Gauss." button and turn on the "Surf." representation button. Don't worry if this takes a bit of time, the calculations involved in this representation are more complex than Gauss. surfaces.
+
+_After a few seconds, Moorhen displays the model as a molecular surface._
+
+![surf. screenshot](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Surf.png)
+
+Moorhen has now combined the van der Waals surfaces of the atoms in the molecule into a single surface representation. As you can see, this representation offers great detail of the surface area of the biomolecule that is accessible to solvent, or in other words the so-called solvent-accessible surface area (SASA). Can you spot any big solvent-exposed cavity in the molecule's surface where a ligand could potentially bind?
 
 ## Maps and map masking
 
