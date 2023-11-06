@@ -163,7 +163,64 @@ Style, colour, transparency, contour level, radius,
 
 ## Clip, Fog and Lighting Effects
 
-## Preferences
+In addition to selecting what is drawn and how it is drawn, you may wish to tweak how your scene is "lit" and also the front and back
+"clipping" planes (i.e. hiding things too "near" or too "far" to show a particular "slab"). These setting are controlled from the "View" menu:
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-View-FogClipEtc.png)
+
+Select "Clipping and fogging..." from the "View" menu. There are 4 sliders, the top 2 alter the front and back clip - move them around to see
+the model be more/less sliced at front and back. The bottom 2 sliders control the fogging or depth-cueing in the scene. "Front zFog" alters 
+how near/far the fog effect begins and "Back zFog" alters where the fog effect stops - the distance beyond which everything is "fogged out"
+or completely obscured. Play around with them to produce dense fog such as this:
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Fog.png)
+
+You may have noticed that after setting the sliders and then zooming in/out the settings change back to previous settings. This is because
+Moorhen's default behaviour is to dynamically alter the clip and fog to what is most appropriate for a given zoom level in the context
+of model building. When creating bespoke views you probably do not want this behaviour and you can prevent it by turning off the 
+"Reset clipping and fogging on zoom" setting in the "Clipping and fogging" options. You can also get this behaviour with 
+"View", "Activate scene preset", "FIGURE MAKING".
+"'Clip-cap' perfect spheres" determines how spheres are drawn when they intersect the front clip plane - you probably 
+don't want to uncheck this.
+
+The "Lighting" entry in the "View" menu brings up a dialog with 4 sliders and a drawing of a sphere:
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Lighting.png)
+
+The 4 sliders alter the contribution of various properties of the lighting model:
+
+* Diffuse - this slider alters the amount of diffuse light from 0 (none) to 1 (full). Diffuse lighting is soft, directional, reflective lighting.
+* Specular - shiny reflections
+* Ambient - non-directional lighting, setting this to 1 floods the scene with light
+* Specular power - This affects the size of the specular reflection.
+
+The big sphere at the bottom is a widget that can be used to control what direction the light comes from. You can click and drag around in it
+to alter the light position:
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Angled-Light.png)
+
+The "Depth blur..." option of the "View" menu brings up dialog with which you can blur the scene beyond a certain depth. Try this:
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Depth-Blur.png)
+
+
+## User defined preferences
+
+Click on the "View" menu under the Moorhen burger button. Notice the switches listed at the begining of this menu? For our convinience, Moorhen will remember these scene settings between sessions. What this means is that we can close Moorhen and open it again at some point in the future and it will remember our prferences. Let's change some of them:
+
+- Turn on "Show Axes".
+
+_Moorhen displays [X, Y, Z] axes on the top right corner_
+
+- Turn on "Perspective projection"
+
+_Instead of giving us a flat view, Moorhen now uses perspective projection to provide better perception of depth when moving the model_
+
+- Click on "Set background colour...". Now choose a new background colour using the colour picker. Let's try a shade of grey.
+
+_Moorhen changes the background colour accordingly_
+
+Additionally, you can find more settings in the "Preferences" menu under the Moorhen burger button. While the default values provided in Moorhen are OK in most use-cases, you may find that you need to experiment with the values of some of these settings depending your needs. After you are happy with the changes, try to open a new Moorhen session and see how your preferred settings are restored in the new session.
 
 ## Saving your image
 
