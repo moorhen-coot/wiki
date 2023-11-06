@@ -119,6 +119,17 @@ Now change "Bond Smoothness" to smooth to produce a much rounder cylinder:
 
 ## Symmetry
 
+Molecular models obtained from crystallographic methods calculations normally contain information about the symmetry of the
+crystal. This information can be used to display symmetry mates of the molecule. Zoom the view out so that there is space around 
+the view of the molecule. Click on the gear wheel icon (described in previous section) to show the draw settings. 
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Before-Symmetry.png)
+
+Then turn on the "Show symmetry mates" button. This will show symmetry mates within the distance specified by the "Symmetry Radius"
+slider immediately below. Play around with the radius.
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Symmetry.png)
+
 ## Surfaces
 
 While completing previous sections you may have noticed buttons labelled with "Surf." and "Gauss." among the different representation styles for a molecule. These buttons let you display your model as a surface. Let's first try to draw a Gaussian surface. Go to the "Models" window and click on the button labelled with "Gauss.".
