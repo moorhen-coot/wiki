@@ -155,6 +155,28 @@ _After a few seconds, Moorhen displays the model as a molecular surface._
 
 Moorhen has now combined the van der Waals surfaces of the atoms in the molecule into a single surface representation. As you can see, this representation offers great detail of the surface area of the biomolecule that is accessible to solvent, or in other words the so-called solvent-accessible surface area (SASA). Can you spot any big solvent-exposed cavity in the molecule's surface where a ligand could potentially bind?
 
+## Labelling atoms, bond lengths and other distances
+
+If you hold down the "l" key whilst clicking on an atom the atom will be given a text label:
+
+![label.screenshot](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Atom-Label.png)
+
+If you hold down the "m" key whilst clicking on one atom *and then another* then both atoms will be labelled and the distance between
+them displayed
+
+![label.screenshot](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Distance-Label.png)
+
+Pressing "c" will clear all atom and distance labels.
+
+"View", ""Show Environment Distances" will make Moorhen display hydrogen bonds (purple) and other potentially close contacts (browny-orange)
+between whatever is at centre of sceen and its immediate environment.
+
+![label.screenshot](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Env-Distance-Menu.png)
+
+![label.screenshot](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Env-Distance.png)
+
+See also "Preferences", "Fonts..." which will affect all of the above.
+
 ## Maps and map masking
 
 In progress
@@ -255,7 +277,7 @@ When you wish to stop recording, hit the square stop button ![](https://raw.gith
 numbers ascending in the same ways as screenshot naming) will be download to your downloads location. 
 This file can be viewed in most browsers and converted to other formats with a variety of tools.
 
-## Saving your Work for later
+## Saving and Restoring Work
 
 If you close your browser, or tab, or navigate away from Moorhen you may lose all your work. You can save your progress in two ways:
 
@@ -263,7 +285,7 @@ If you close your browser, or tab, or navigate away from Moorhen you may lose al
 
 ![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Save-Backup.png)
 
-This will save backup in the web browsers storage. The backup can be recovered with
+This will save backup in the web browsers storage. The backup can be recovered with "File", "Recover session backup...":
 
 ![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Recover-Backup.png)
 
