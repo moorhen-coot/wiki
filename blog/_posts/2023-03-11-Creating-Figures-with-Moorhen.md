@@ -96,7 +96,26 @@ Then click "Apply":
 
 ## Ball and Stick Variants
 
-Bond width options, etc.
+There are many options to customize the drawing of both maps and models. We begin here by showing how to change some settings for
+the drawing of "Bonds" model representations. Click on the gear wheel button ![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Model-Gear-Wheel.png) to the right of the atom representations buttons. A large dialog with many options will appear:
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Model-Options.png)
+
+The top slider ("Bond width") controls the thickness of the bond. The second slider ("Radius-Bond ratio") changes the relative size of
+the sphere drawn at each atom position to the bond. Try changing these two sliders to about 0.2 and 2.0 respectively. Your "bonds" will
+change to balls and sticks.
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Ball-And-Stick.png)
+
+The third slider in the settings dialog varies the smoothness of the cylinders drawing the bonds. The effect of this slider
+will be most noticed in close up scenes. Zoom in closely and rotate the scene so that you can see a bond/sphere intersection
+clearly:
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Ball-And-Stick-Close.png)
+
+Now change "Bond Smoothness" to smooth to produce a much rounder cylinder:
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Ball-And-Stick-Close-Smooth.png)
 
 ## Symmetry
 
@@ -110,7 +129,7 @@ Style, colour, transparency, contour level, radius,
 
 ## Validation and Analysis
 
-## Lighting Effects
+## Clip, Fog and Lighting Effects
 
 ## Preferences
 
