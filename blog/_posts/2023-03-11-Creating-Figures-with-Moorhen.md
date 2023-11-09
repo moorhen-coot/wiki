@@ -179,11 +179,80 @@ See also "Preferences", "Fonts..." which will affect all of the above.
 
 ## Maps and map masking
 
-In progress
+The Maps dialog allow you to control the display of the map.
 
-## Validation and Analysis
+- Click **Maps**
 
-In progress
+_{Moorhen shows the Maps dialog}_
+
+Each map has its own "card"
+
+ - Click on the "eye" icon the display or undisplay that particular map.
+
+There are sliders for the contour level and the map display radius. You can adjust these, but be aware that it invokes considerable computations when can take some time to updaets/refresh the display (this is particularly true for Cryo-EM reconstructions).
+
+ - Click on **Histogram** button
+
+ _{Moorhen reveals the density histogram for that map}_
+
+Generally speaking, "Fo-Fc" style difference maps are expected to have a normal distribution and "2Fo-Fc" style maps will have a skewed normal distribution (the skew to to the side of higher density values).
+ 
+![map histogram](../../../images/Moorhen-tutorial-map-histogram.png)
+
+Histograms of maps from cryo-EM reconstructions generally don't look normal.
+
+# Ligand-masked Map
+
+We will use the reference structure for Tuturial-1.
+
+ - Click **File**
+- in the "Fetch coords from online services" Choose "PDBe" (it's the default)
+- Type "2vtq" in the entry
+- Click **Fetch**
+
+Let's find the ligand of that reference structure:
+
+ - Click on **Models** _{Moorhen shows the "Models" dialog}_
+- See that the "Bonds" button is activated (if not, click it on now).
+
+To undisplay the tutorial model:
+
+  - Click on the eye button in the "Models" card for "mol1"
+
+_{Moorhen undisplayed mol-1}_
+
+ - In the card for the "2vtq" Model, click on the **Ligands** tab.
+
+ _{Moorhen reveals the ligands in this molecule (in this case, there is only  one)}_
+
+ - Click on the label "A/1299 (LZA)"
+
+ _{Moorhen brings the ligand to the centre of the screen}_
+
+  - Close the "Models" dialog.
+  - Open the "Maps" dialog
+  - Click on the **Cryo** button
+  - Click **Map masking...**
+
+There are a number of methods we can use for selection
+
+  - Change "By molecule" to "By ligand"
+
+_{Moorhen opens another selection tool, we'll get to it in a second}_
+
+  - Choose "map-1" for the Map difference map #FIXME
+  - Choose "2vtq" for the molecule
+  - Turn on the **Invert map** switch
+  - Click **OK**
+
+_{Moorhen creates a masked map over the ligand}_
+
+Now let's change the map sampling (smoother maps are more attractive)
+
+  - In **Preferences** &rarr; **Set map sampling rate**
+    change to "2.1" - The larger the sampling rate, the smoother
+    the map, but also the slower to draw.
+  
 
 ## Clip, Fog and Lighting Effects
 
