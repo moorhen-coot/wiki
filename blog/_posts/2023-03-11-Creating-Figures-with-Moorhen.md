@@ -197,7 +197,7 @@ There are sliders for the contour level and the map display radius. You can adju
 
 Generally speaking, "Fo-Fc" style difference maps are expected to have a normal distribution and "2Fo-Fc" style maps will have a skewed normal distribution (the skew to to the side of higher density values).
  
-![map histogram](../../../images/Moorhen-tutorial-map-histogram.png)
+![map histogram](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-tutorial-map-histogram.png)
 
 Histograms of maps from cryo-EM reconstructions generally don't look normal.
 
