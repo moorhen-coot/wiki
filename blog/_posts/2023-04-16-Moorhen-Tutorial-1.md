@@ -51,8 +51,7 @@ Similarly, you can change the thickness of the map lines if you wish.
 
 ## Let's Go!
 
-Our job is to fix and amend the protein model in a way that is consistent with the data. Let's first look
-at the Ramachandran plot:
+Our job is to fix and amend the protein model in a way that is consistent with the data. 
 
 ## Maps and Models
 
@@ -64,7 +63,7 @@ Initially the background of the window is semi-transparent,
 
   - Put your cursor over the window to make it opaque. This behaviour can be switched off in **Preferences**.
 
-You will see a sequence viewer - let's use that to move around the structure. Click on a few letters (that represent the residues in the protein). Notice that the map density mesh is redrawn around the new centre.
+You will see a dropdown menu labelled "**Sequences**". Click on it to open the accordion and reveal the sequence viewer - let's use that to move around the structure. Click on a few letters (that represent the residues in the protein). Notice that the map density mesh is redrawn around the new centre.
 
 See the grey rectangle over the sequence numbers?
 
@@ -73,7 +72,7 @@ See the grey rectangle over the sequence numbers?
 You can resize the rectangle to display more residue letters (by clicking and dragging on
 the _edge_ of the box), but if you make it too wide it will not display any.
 
-  - Click on the **Ligands** tab
+  - Click on the **Ligands** dropdown tab to open the ligands accordion
 
 Notice that there are "No ligands." We will add one later.
 
@@ -92,6 +91,7 @@ You will now see the cards for the maps (the 2Fo-Fc-style map has a blue icon an
   You can now dismiss the draggable **Maps** and **Models** windows using the close button. Alternatively, you may prefer to minimise them so that you don't have to open and close them multiple times.
 
 ## Validation Tools
+Let's now look at the Ramachandran plot:
 
   - Click on the **Validation** button under the dropdown burger menu.
 
@@ -107,7 +107,7 @@ You will see that there are several interesting red spots.
 
 _Moorhen will put residue A180 at the centre of the screen_
 
-Take a look at the region... (You can slide the drawer closed for a better look).
+Take a look at the region... (You can minimise the validation window for a better look).
 
 Hmmm... the carbonyl oxygen atoms are a bit close... Are there any other Ramachandran outliers in the area?
 
@@ -369,6 +369,7 @@ _A window will open with a message letting you know that the model was saved in 
 
 Let's see if we managed to improve the Rfree using Refmac. In CCP4 Cloud, add a "Refinement using Refmac" task to the tree right under the Moorhen task. Make sure to set the "Number of refinement cycles" to zero and wait for the results. Now do the same, but create the Refmac task at the same level as the Moorhen task, i.e. using the original unmodified model as input. According to Refmac, did the Rfactor and Rfree improve tinkering with the model using Moorhen?
 
+If you are doing this tutorial in [moorhen.org](https://moorhen.org/) then you can export models by clicking on the download button on the top right of the molecule card found in the **Models** window.
 
 ## Notes:
 
