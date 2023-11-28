@@ -9,7 +9,7 @@ date: Fri 3 Nov 16:08:00 GMT 2023
 This tutorial will explain how to make high-quality figures of molecular models, maps, and analysis/validation markup with Moorhen.
 Load tutorial data 1 into Moorhen by:
 
-Begin by clicking on the Moorhen burger icon and then 
+Clicking on the Moorhen burger icon and then 
  clicking on the "File" button and selecting "Load tutorial data" and then selecting tutorial 1 and clicking "OK". You should see something like this:
 
 ![layout](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Initial-View.png)
@@ -155,11 +155,104 @@ _After a few seconds, Moorhen displays the model as a molecular surface._
 
 Moorhen has now combined the van der Waals surfaces of the atoms in the molecule into a single surface representation. As you can see, this representation offers great detail of the surface area of the biomolecule that is accessible to solvent, or in other words the so-called solvent-accessible surface area (SASA). Can you spot any big solvent-exposed cavity in the molecule's surface where a ligand could potentially bind?
 
+## Labelling atoms, bond lengths and other distances
+
+If you hold down the "l" key whilst clicking on an atom the atom will be given a text label:
+
+![label.screenshot](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Atom-Label.png)
+
+If you hold down the "m" key whilst clicking on one atom *and then another* then both atoms will be labelled and the distance between
+them displayed
+
+![label.screenshot](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Distance-Label.png)
+
+Pressing "c" will clear all atom and distance labels.
+
+"View", ""Show Environment Distances" will make Moorhen display hydrogen bonds (purple) and other potentially close contacts (browny-orange)
+between whatever is at centre of sceen and its immediate environment.
+
+![label.screenshot](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Env-Distance-Menu.png)
+
+![label.screenshot](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Env-Distance.png)
+
+See also "Preferences", "Fonts..." which will affect all of the above.
+
 ## Maps and map masking
 
-Style, colour, transparency, contour level, radius, 
+The Maps dialog allow you to control the display of the map.
 
-## Validation and Analysis
+- Click **Maps**
+
+_{Moorhen shows the Maps dialog}_
+
+Each map has its own "card"
+
+ - Click on the "eye" icon the display or undisplay that particular map.
+
+There are sliders for the contour level and the map display radius. You can adjust these, but be aware that it invokes considerable computations when can take some time to updaets/refresh the display (this is particularly true for Cryo-EM reconstructions).
+
+ - Click on **Histogram** button
+
+ _{Moorhen reveals the density histogram for that map}_
+
+Generally speaking, "Fo-Fc" style difference maps are expected to have a normal distribution and "2Fo-Fc" style maps will have a skewed normal distribution (the skew to to the side of higher density values).
+ 
+![map histogram](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-tutorial-map-histogram.png)
+
+Histograms of maps from cryo-EM reconstructions generally don't look normal.
+
+# Ligand-masked Map
+
+We will use the reference structure for Tuturial-1.
+
+ - Click **File**
+- in the "Fetch coords from online services" Choose "PDBe" (it's the default)
+- Type "2vtq" in the entry
+- Click **Fetch**
+
+Let's find the ligand of that reference structure:
+
+ - Click on **Models** _{Moorhen shows the "Models" dialog}_
+- See that the "Bonds" button is activated (if not, click it on now).
+
+To undisplay the tutorial model:
+
+  - Click on the eye button in the "Models" card for "mol1"
+
+_{Moorhen undisplayed mol-1}_
+
+ - In the card for the "2vtq" Model, click on the **Ligands** tab.
+
+ _{Moorhen reveals the ligands in this molecule (in this case, there is only  one)}_
+
+ - Click on the label "A/1299 (LZA)"
+
+ _{Moorhen brings the ligand to the centre of the screen}_
+
+  - Close the "Models" dialog.
+  - Open the "Maps" dialog
+  - Click on the **Cryo** button
+  - Click **Map masking...**
+
+There are a number of methods we can use for selection
+
+  - Change "By molecule" to "By ligand"
+
+_{Moorhen opens another selection tool, we'll get to it in a second}_
+
+  - Choose "map-1" for the Map difference map #FIXME
+  - Choose "2vtq" for the molecule
+  - Turn on the **Invert map** switch
+  - Click **OK**
+
+_{Moorhen creates a masked map over the ligand}_
+
+Now let's change the map sampling (smoother maps are more attractive)
+
+  - In **Preferences** &rarr; **Set map sampling rate**
+    change to "2.1" - The larger the sampling rate, the smoother
+    the map, but also the slower to draw.
+  
 
 ## Clip, Fog and Lighting Effects
 
@@ -224,4 +317,55 @@ Additionally, you can find more settings in the "Preferences" menu under the Moo
 
 ## Saving your image
 
+When you are happy with your picture there are a few ways of creating your final image: you can simply take screenshot using 
+tools provided by your operating system - Print Screen key on Windows, Shift+Cmd+4 on macOS, etc.; hit the "S" key in Moorhen; "File",
+"Screenshot". 
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Screenshot-Menu.png)
+
+The last 2 options do the same thing, they instruct Moorhen to create a high resolution image. The high resolution image will
+be either 4096 pixels wide or 4096 pixels high d, with the other dimension scaled to match the shape of your Moorhen window. The file will 
+automatically downloaded by your browser to your normal download location and named something like "moorhen.png". Subsequently saved images
+will be named similarly with a number inserted into the name - the way this is done depends on your browser. e.g. this shows the recently
+saved images by a user who has saved 44 images with Moorhen:
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Recent-Screenshots.png)
+
 ## Video Recording
+
+"File", "Record a video" will put Moorhen into a recording mode where it will record eveything that you do into a video - just the 
+molecular graphics, not the menus or dialogs: 
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Video-Menu.png)
+
+When recording a box with a flashing red "light" appears at the top of the screen:
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Video-Recording.png)
+
+When you wish to stop recording, hit the square stop button ![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Stop-Button.png) at the right hand side of the recording box. A file name "moorhen.webm" (with
+numbers ascending in the same ways as screenshot naming) will be download to your downloads location. 
+This file can be viewed in most browsers and converted to other formats with a variety of tools.
+
+## Saving and Restoring Work
+
+If you close your browser, or tab, or navigate away from Moorhen you may lose all your work. You can save your progress in two ways:
+
+* "File", "Save backup"
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Save-Backup.png)
+
+This will save backup in the web browsers storage. The backup can be recovered with "File", "Recover session backup...":
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Recover-Backup.png)
+
+Select a backup from the list and then click "OK" to load. *This only works on the computer/browser you saved on and may be deleted
+if you clear the browsers cache.*
+
+* "File", "Download session"
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Download-Session.png)
+
+This will download a dile named "session.json" (again with numbers like screenshots and videos). This file can be moved to other
+computers, etc. and reloaded anywhere with "File", "Load from stored session":
+
+![](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Upload-Session.png)
