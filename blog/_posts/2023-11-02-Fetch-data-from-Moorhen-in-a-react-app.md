@@ -252,12 +252,6 @@ That's it! Now you should be able to load molecules and maps into Moorhen from y
     interface State {
         molecules: Molecule[];
         maps: Map[];
-        canvasStates: {
-            backgroundColor: [number, number, number, number];
-            height: number;
-            width: number;
-            isDark: boolean
-        };
         mapSettings: {
             defaultMapSamplingRate: number;
             defaultMapLitLines: boolean;
@@ -310,7 +304,11 @@ That's it! Now you should be able to load molecules and maps into Moorhen from y
             doSpinTest: boolean;
             defaultBondSmoothness: number,
             resetClippingFogging: boolean; 
-            clipCap: boolean; 
+            clipCap: boolean;
+            backgroundColor: [number, number, number, number];
+            height: number;
+            width: number;
+            isDark: boolean;
         };
         miscAppSettings: {
             defaultExpandDisplayCards: boolean; 
@@ -325,6 +323,10 @@ That's it! Now you should be able to load molecules and maps into Moorhen from y
             notificationContent: JSX.Element;
             activeMap: Map;
             theme: string;
+            residueSelection: ResidueSelection;
+            isChangingRotamers: boolean;
+            isDraggingAtoms: boolean;
+            isRotatingAtoms: boolean;
         };
         hoveringStates: {
             enableAtomHovering: boolean;
