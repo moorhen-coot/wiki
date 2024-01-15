@@ -252,12 +252,6 @@ That's it! Now you should be able to load molecules and maps into Moorhen from y
     interface State {
         molecules: Molecule[];
         maps: Map[];
-        mapSettings: {
-            defaultMapSamplingRate: number;
-            defaultMapLitLines: boolean;
-            mapLineWidth: number;
-            defaultMapSurface: boolean;
-        };
         mouseSettings: {
             contourWheelSensitivityFactor: number;
             zoomWheelSensitivityFactor: number;
@@ -327,11 +321,49 @@ That's it! Now you should be able to load molecules and maps into Moorhen from y
             isChangingRotamers: boolean;
             isDraggingAtoms: boolean;
             isRotatingAtoms: boolean;
+            newCootCommandAlert: boolean;
+            showResidueSelection: boolean;
         };
         hoveringStates: {
             enableAtomHovering: boolean;
             hoveredAtom: HoveredAtom;
             cursorStyle: string;
+        };
+        activeModals: {
+            showModelsModal: boolean;
+            showMapsModal: boolean;
+            showCreateAcedrgLinkModal: boolean;
+            showQuerySequenceModal: boolean;
+            showScriptingModal: boolean;
+            showControlsModal: boolean;
+            showFitLigandModal: boolean;
+            showRamaPlotModal: boolean;
+            showDiffMapPeaksModal: boolean;
+            showValidationPlotModal: boolean;
+            showLigandValidationModal: boolean;
+            showPepFlipsValidationModal: boolean;
+            showFillPartialResValidationModal: boolean;
+            showUnmodelledBlobsModal: boolean;
+            showMmrrccModal: boolean;
+            showWaterValidationModal: boolean;
+            focusHierarchy: string[];
+        };
+        mapContourSettings: {
+            visibleMaps: number[];
+            contourLevels: { molNo: number; contourLevel: number }[];
+            mapRadii: { molNo: number; radius: number }[];
+            mapAlpha: { molNo: number; alpha: number }[];
+            mapStyles: { molNo: number; style: "solid" | "lit-lines" | "lines" }[];
+            defaultMapSamplingRate: number;
+            defaultMapLitLines: boolean;
+            mapLineWidth: number;
+            defaultMapSurface: boolean;
+            mapColours: { molNo: number; rgb: {r: number, g: number, b: number} }[];
+            negativeMapColours: { molNo: number; rgb: {r: number, g: number, b: number} }[];
+            positiveMapColours: { molNo: number; rgb: {r: number, g: number, b: number} }[];
+        };
+        moleculeRepresentations: {
+            visibleMolecules: number[];
         };
     }
 ```
