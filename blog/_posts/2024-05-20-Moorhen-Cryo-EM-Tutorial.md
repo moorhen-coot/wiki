@@ -42,16 +42,10 @@ You should now see a map with three unfitted parts
 
 ![Moorhen 3 Domains]({{"../../../images/moorhen-3-domains.png"}})
 
-Let's fit the nanobody!
 
 ### Fitting the Nanobody
 
-Now we want to model the nanobody domain.
-
 We have done a BLAST search for the sequence of our nanobody and know that the structure was published already in a different complex - it's the "E" chain in the entry ``6GDG``. So let's fetch that structure, extract the "E" chain and then fit it to our reconstruction.
-
-   - First centre the view on the centre of the nanobody/immunoglobulin domain.
-
 
 Fetch the Reference Structure:
 
@@ -66,7 +60,8 @@ Now make the fragment we need from that:
 
 So now we have the "E" chain floating around in space...
 
-  - Delete the `6gdg` model
+Delete the `6gdg` model:
+
   - **Models** Click on the gear icon of the `6gdg` molecule and **Delete molecule**
 
 Change the representation of the '//E' chain
@@ -113,10 +108,8 @@ To refine this domain/chain:
    - Atom Selection is `//` (i.e. "all atoms")
    - **OK**
 
-
-
 You will see that the nanobody is now highlighted with green bonds and atoms.
-A dialog will appear middle top
+A dialog will appear at the middle top
 
 ![Moorhen Selection Panel]({{"../../../images/moorhen-selection-panel.png"}})
 
