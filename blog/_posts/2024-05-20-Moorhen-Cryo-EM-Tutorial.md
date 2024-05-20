@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "cryo-em"
-date: Fri 3 Nov 16:08:00 GMT 2023
+title: "Moorhen Cryo-EM Tutorial: Fitting the Nanobody"
+date: Mon 20 Nov 16:08:00 GMT 2024
 ---
 
 
@@ -32,7 +32,7 @@ At the moment, you will need to gunzip the map.
 
   - Undisplay the new map: Click on the "Eye" icon
 
-Now mask the map using the (partial) model (the bits that's we have alread fitted):
+Now mask the map using the (partial) model (the bits that's we have already fitted):
   - **Map Tools** &rarr; **Map masking...** &rarr; **OK**
 
 You should now see a map with three unfitted parts
