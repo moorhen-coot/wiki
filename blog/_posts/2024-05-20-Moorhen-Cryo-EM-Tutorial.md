@@ -1,9 +1,13 @@
+---
+layout: post
+title:  "Moorhen for Cryo-EM - Fitting the Nanobody"
+date: Monday 20 May 18:36:06 BST 2024
+---
 
-# Moorhen for Cryo-EM - Fitting the Nanobody
 
 ## Getting Started: Load the Map and Model
 
-Get the reference files
+Get the reference files:
 
     - https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/files/32143-partial-model.pdb
     - https://ftp.ebi.ac.uk/pub/databases/emdb/structures/EMD-32143/map/emd_32143.map.gz
@@ -24,7 +28,7 @@ At the moment, you will need to gunzip the map.
 
   - Delete the first map: **Maps** Click on the Gear icon of the first map and **Delete Map**.
 
-  ## Rigid-Body Fitting
+## Rigid-Body Fitting
 
   - Undisplay the new map: Click on the "Eye" icon
 
