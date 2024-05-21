@@ -20,8 +20,8 @@ At the moment, you will need to gunzip the map.
   - (you can also use '[' and ']' to increase and decrease the map radius)
 
   - **Map Tools** &rarr; **Sharpen/Blur map**
-  - B-factor to apply should be zero
-  - Turn on **use resample** and use the resample factor 1.4 &rarr; **OK**
+  - "B-factor to apply" should be `0`
+  - Turn on **use resample** and use the resample factor `1.4` &rarr; **OK**
   - **Maps** &rarr; Click on the "Gear" icon on the (newly-created) Masked map &rarr; Draw settings &rarr; Activate "**Lit lines**"
 
   You will see that this new map is more easy to interpret.
@@ -108,12 +108,19 @@ Moorhen generates extra restraints (shown in grey lines)
   - **Maps** &rarr; "Gear" icon of the masked map &rarr; **set map weight**
   - `1830` (it should be the default) &rarr; **Set**
 
-To refine this domain/chain:
+To refine this domain/chain, we need to tell Moorhen which map to use
+for the refinement
+
+  - **Maps** &rarr; Click on the "○ Active" button of the masked map
+
+The background of the button will turn black when it's active.
+
+Now define which atoms we want to refine (in this case, all of the nanobody)
 
   - **Edit** &rarr; **Create a selection**
-   - Molecule is `6gdg fragment`
-   - Atom Selection is `//` (i.e. "all atoms")
-   - **OK**
+  - Molecule is `6gdg fragment`
+  - Atom Selection is `//` (i.e. "all atoms")
+  - **OK**
 
 You will see that the nanobody is now highlighted with green bonds and atoms.
 A dialog will appear at the middle top
