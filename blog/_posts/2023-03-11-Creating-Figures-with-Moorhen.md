@@ -9,7 +9,7 @@ date: Fri 3 Nov 16:08:00 GMT 2023
 This tutorial will explain how to make high-quality figures of molecular models, maps, and analysis/validation markup with Moorhen.
 Load tutorial data 1 into Moorhen by:
 
-Begin by clicking on the Moorhen burger icon and then 
+Clicking on the Moorhen burger icon and then 
  clicking on the "File" button and selecting "Load tutorial data" and then selecting tutorial 1 and clicking "OK". You should see something like this:
 
 ![layout](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Initial-View.png)

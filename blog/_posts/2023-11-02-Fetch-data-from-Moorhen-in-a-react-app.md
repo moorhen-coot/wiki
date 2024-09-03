@@ -250,20 +250,12 @@ export const MoorhenController = () => {
 That's it! Now you should be able to load molecules and maps into Moorhen from your host app and import them back into your app. Here's a full list of all the different states held in Moorhen's redux store and their types. Generally, action creators can be imported from `moorhen` module and are named with the convention `set<StateName>`, like for example `setBackgroundColor`. The only two exceptions are `molecules` and `maps`, which have action creators named `add<StatName>` and `remove<StateName>` like for example `addMolecule` and `removeMolecule`.
 ```javascript
     interface State {
-        molecules: Molecule[];
+        molecules: {
+            moleculeList: Molecule[];
+            visibleMolecules: number[];
+            customRepresentations: MoleculeRepresentation[];
+        };
         maps: Map[];
-        canvasStates: {
-            backgroundColor: [number, number, number, number];
-            height: number;
-            width: number;
-            isDark: boolean
-        };
-        mapSettings: {
-            defaultMapSamplingRate: number;
-            defaultMapLitLines: boolean;
-            mapLineWidth: number;
-            defaultMapSurface: boolean;
-        };
         mouseSettings: {
             contourWheelSensitivityFactor: number;
             zoomWheelSensitivityFactor: number;
@@ -274,10 +266,6 @@ That's it! Now you should be able to load molecules and maps into Moorhen from y
             makeBackups: boolean;
             maxBackupCount: number;
             modificationCountBackupThreshold: number;     
-        };
-        updatingMapScoresSettings: {
-            defaultUpdatingScores: string[];
-            showScoresToast: boolean;
         };
         shortcutSettings: {
             shortcutOnHoveredAtom: boolean;
@@ -292,6 +280,7 @@ That's it! Now you should be able to load molecules and maps into Moorhen from y
         };
         sceneSettings: {
             defaultBackgroundColor: [number, number, number, number];
+            drawScaleBar: boolean; 
             drawCrosshairs: boolean; 
             drawAxes: boolean; 
             drawFPS: boolean; 
@@ -306,16 +295,26 @@ That's it! Now you should be able to load molecules and maps into Moorhen from y
             doShadowDepthDebug: boolean; 
             doShadow: boolean; 
             doSSAO: boolean; 
+            doEdgeDetect: boolean; 
+            edgeDetectDepthThreshold: number;
+            edgeDetectNormalThreshold: number;
+            edgeDetectDepthScale: number;
+            edgeDetectNormalScale: number;
             doOutline: boolean; 
-            doSpinTest: boolean;
+            doSpin: boolean;
             defaultBondSmoothness: number,
             resetClippingFogging: boolean; 
-            clipCap: boolean; 
+            clipCap: boolean;
+            backgroundColor: [number, number, number, number];
+            height: number;
+            width: number;
+            isDark: boolean;
         };
         miscAppSettings: {
             defaultExpandDisplayCards: boolean; 
             transparentModalsOnMouseOut: boolean; 
             enableRefineAfterMod: boolean; 
+            animateRefine: boolean;
         };
         generalStates: {
             devMode: boolean; 
@@ -325,11 +324,83 @@ That's it! Now you should be able to load molecules and maps into Moorhen from y
             notificationContent: JSX.Element;
             activeMap: Map;
             theme: string;
+            residueSelection: ResidueSelection;
+            isAnimatingTrajectory: boolean;
+            isChangingRotamers: boolean;
+            isDraggingAtoms: boolean;
+            isRotatingAtoms: boolean;
+            newCootCommandExit: boolean;
+            newCootCommandStart: boolean;        
+            showResidueSelection: boolean;
+            useRamaRefinementRestraints: boolean;
+            useTorsionRefinementRestraints: boolean;        
+        };
+        sharedSession: {
+            isInSharedSession: boolean;
+            sharedSessionToken: string;
+            showSharedSessionManager: boolean;
         };
         hoveringStates: {
             enableAtomHovering: boolean;
             hoveredAtom: HoveredAtom;
             cursorStyle: string;
+        };
+        activePopUps: {
+            matchingLigandPopUp: {
+                show: boolean;
+                refMolNo: number;
+                movingMolNo: number;
+                refLigandCid: string;
+                movingLigandCid: string;
+              }
+        };
+        activeModals: {
+            showModelsModal: boolean;
+            showMapsModal: boolean;
+            showCreateAcedrgLinkModal: boolean;
+            showQuerySequenceModal: boolean;
+            showScriptingModal: boolean;
+            showControlsModal: boolean;
+            showFitLigandModal: boolean;
+            showRamaPlotModal: boolean;
+            showDiffMapPeaksModal: boolean;
+            showValidationPlotModal: boolean;
+            showLigandValidationModal: boolean;
+            showCarbohydrateModal: boolean;
+            showPepFlipsValidationModal: boolean;
+            showFillPartialResValidationModal: boolean;
+            showUnmodelledBlobsModal: boolean;
+            showMmrrccModal: boolean;
+            showWaterValidationModal: boolean;
+            showSceneSettingsModal: boolean;
+            showSliceNDiceModal: boolean;
+            focusHierarchy: string[];
+        };
+        mapContourSettings: {
+            visibleMaps: number[];
+            contourLevels: { molNo: number; contourLevel: number }[];
+            mapRadii: { molNo: number; radius: number }[];
+            mapAlpha: { molNo: number; alpha: number }[];
+            mapStyles: { molNo: number; style: "solid" | "lit-lines" | "lines" }[];
+            defaultMapSamplingRate: number;
+            defaultMapLitLines: boolean;
+            mapLineWidth: number;
+            defaultMapSurface: boolean;
+            mapColours: { molNo: number; rgb: {r: number, g: number, b: number} }[];
+            negativeMapColours: { molNo: number; rgb: {r: number, g: number, b: number} }[];
+            positiveMapColours: { molNo: number; rgb: {r: number, g: number, b: number} }[];
+            reContourMapOnlyOnMouseUp: boolean;
+        };
+        moleculeMapUpdate: {
+            updatingMapsIsEnabled: boolean;
+            connectedMolecule: number;
+            reflectionMap: number;
+            twoFoFcMap: number;
+            foFcMap: number;
+            uniqueMaps: number[];
+            defaultUpdatingScores: string[];
+            showScoresToast: boolean;
+            moleculeUpdate: { switch: boolean, molNo: number };
         };
     }
 ```
