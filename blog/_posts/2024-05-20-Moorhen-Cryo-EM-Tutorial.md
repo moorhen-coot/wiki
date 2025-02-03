@@ -45,7 +45,7 @@ You should now see a map with three unfitted parts
   - a WD40 domain
   - a nanobody domain
 
-![Moorhen 3 Domains]({{"../../../images/moorhen-3-domains.png"}})
+![Moorhen 3 Domains](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/moorhen-3-domains.png)
 
 ### Fitting the Nanobody
 
@@ -125,7 +125,7 @@ Now define which atoms we want to refine (in this case, all of the nanobody)
 You will see that the nanobody is now highlighted with green bonds and atoms.
 A dialog will appear at the middle top
 
-![Moorhen Selection Panel]({{"../../../images/moorhen-selection-panel.png"}})
+![Moorhen Selection Panel](https://raw.githubusercontent.com/moorhen-coot/blog/main/images/moorhen-selection-panel.png)
 
   - Click on the "Refine" icon (top left)
   - Moorhen refines the nanobody
