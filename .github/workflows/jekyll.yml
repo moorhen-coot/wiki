@@ -38,9 +38,11 @@ jobs:
         with:
           source: ./blog
           destination: ./_site
-      - name: Upload artifact
+      - name: checkout
         uses: actions/checkout@v3
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+      - name: deploy
         uses: actions/deploy-pages@v2
 
   # Deployment job
