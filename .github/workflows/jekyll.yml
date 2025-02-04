@@ -39,7 +39,9 @@ jobs:
           source: ./blog
           destination: ./_site
       - name: Upload artifact
+        uses: actions/checkout@v3
         uses: actions/upload-pages-artifact@v3
+        uses: actions/deploy-pages@v2
 
   # Deployment job
   # deploy:
@@ -52,13 +54,4 @@ jobs:
   #     - name: Deploy to GitHub Pages
   #       id: deployment
   #       uses: actions/deploy-pages@v2
-
-
-  # - uses: actions/deploy-pages@v2
- 
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/deploy-pages@v2
 
