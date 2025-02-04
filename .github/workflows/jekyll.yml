@@ -51,9 +51,10 @@ jobs:
   #       uses: actions/deploy-pages@v2
 
 
+  # - uses: actions/deploy-pages@v2
+ 
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/deploy-pages@v2
 
