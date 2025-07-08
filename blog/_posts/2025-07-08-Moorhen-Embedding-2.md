@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Embedding Moorhen in React, NextJS and Electron"
-date: Wed 8 Jul 12:48:00 GMT 2025
+date: Wed 8 Jul 13:43:00 GMT 2025
 ---
 
 # Deploying/Embedding Moorhen
