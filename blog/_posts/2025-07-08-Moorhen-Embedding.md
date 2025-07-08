@@ -1214,10 +1214,10 @@ This might be useful if there’s a bug/missing feature in the Moorhen npm modul
 
 ![][image7]
 
-[image1]: https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Additional-Repr-Ribbon-BFactor-Settings.png
-[image2]: https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Additional-Repr-Ribbon-BFactor-Settings.png
-[image3]: https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Additional-Repr-Ribbon-BFactor-Settings.png
-[image4]: https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Additional-Repr-Ribbon-BFactor-Settings.png
-[image5]: https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Additional-Repr-Ribbon-BFactor-Settings.png
-[image6]: https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Additional-Repr-Ribbon-BFactor-Settings.png
-[image7]: https://raw.githubusercontent.com/moorhen-coot/blog/main/images/Moorhen-Figure-Tutorial-Additional-Repr-Ribbon-BFactor-Settings.png
+[image1]: https://raw.githubusercontent.com/moorhen-coot/blog/main/images/MoorhenEmbedViteScreenshot.png
+[image2]: https://raw.githubusercontent.com/moorhen-coot/blog/main/images/MoorhenEmbedMinimal.png
+[image3]: https://raw.githubusercontent.com/moorhen-coot/blog/main/images/MoorhenEmbedButtons.png
+[image4]: https://raw.githubusercontent.com/moorhen-coot/blog/main/images/MoorhenEmbedButtonsWithData.png
+[image5]: https://raw.githubusercontent.com/moorhen-coot/blog/main/images/MoorhenEmbedMinimalSized.png
+[image6]: https://raw.githubusercontent.com/moorhen-coot/blog/main/images/MoorhenEmbedNextJSRamaPlot.png
+[image7]: https://raw.githubusercontent.com/moorhen-coot/blog/main/images/MoorhenEmbedDevDoc.png
