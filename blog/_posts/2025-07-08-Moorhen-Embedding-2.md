@@ -856,7 +856,7 @@ Now let’s define the user interface:
     return <Container fluid className="p-0">  
              <Row>  
                  <Col>  
-                     <MoorhenContainer viewOnly={false} sx={{width: '600px', maxWidth: '600px'}} setMoorhenDimensions={setDimensions} {...collectedProps}/>  
+                     <MoorhenContainer viewOnly={false} sx={{width: '600px', maxWidth: '600px' }} setMoorhenDimensions={setDimensions} {...collectedProps}/>  
                  </Col>  
                  <Col>  
                      <Row className="p-3">  
