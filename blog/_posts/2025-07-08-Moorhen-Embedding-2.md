@@ -9,13 +9,13 @@ date: Tue 8 Jul 03:43:00 GMT 2025
 ## Adding Moorhen to a web server
 
 A useful example is:  
-[https://github.com/stuartjamesmcnicholas/moorhen-dist.git](https://github.com/stuartjamesmcnicholas/moorhen-dist.git)  
+[https://github.com/moorhen-coot/moorhen-dist.git](https://github.com/moorhen-coot/moorhen-dist.git)  
 This is a tiny (trivial) React project which embeds moorhen and creates a deployable folder.
 
 ### Simplest case: Moorhen is the website
 
 ```
-git clone https://github.com/stuartjamesmcnicholas/moorhen-dist.git  
+git clone https://github.com/moorhen-coot/moorhen-dist.git  
 cd moorhen-dist  
 npm install && npm run build
 ```
@@ -23,7 +23,7 @@ npm install && npm run build
 The build directory now contains all that is necessary to run Moorhen from the root of a web server. The project comes with an example server script in Python:
 
 ```
-cd dist  
+cd build  
 python3 ../SimpleCrossOriginServer.py
 
 Serving HTTP on :: port 8000 (http://[::]:8000/)
@@ -173,7 +173,7 @@ This step is necessary because the Coot Worker needs to know where to get WebAss
 Now we need to provide an `index.html`. This needs to be in the root directory of our project, i.e. **not** in `src`. The example below is from 
 
 ```
-https://raw.githubusercontent.com/stuartjamesmcnicholas/MinimalEmbeddedMoorhen/refs/heads/main/index.html 
+https://raw.githubusercontent.com/moorhen-coot/MinimalEmbeddedMoorhen/refs/heads/main/index.html 
 ```
 
 It seems quite long and complicated, almost all of it is just to load the Coot WebAssembly functionality into the main UI Worker of the application. We do this so that we can do things like analyze the contents of e.g. MTZ files before loading them with particular options.
@@ -545,12 +545,12 @@ We can change the size of Moorhen’s 3D canvas:
 ![][image5]
 
 This example can be downloaded from  
-[https://github.com/stuartjamesmcnicholas/MinimalEmbeddedMoorhen](https://github.com/stuartjamesmcnicholas/MinimalEmbeddedMoorhen) 
+[https://github.com/moorhen-coot/MinimalEmbeddedMoorhen](https://github.com/moorhen-coot/MinimalEmbeddedMoorhen) 
 
 And rather than working through all of the above, one can simply do:
 
 ```
-git clone https://github.com/stuartjamesmcnicholas/MinimalEmbeddedMoorhen.git  
+git clone https://github.com/moorhen-coot/MinimalEmbeddedMoorhen.git  
 cd MinimalEmbeddedMoorhen  
 npm install  
 mkdir -p ./public && cp -r ./node_modules/moorhen/public/* ./public/  
@@ -1008,7 +1008,7 @@ Note that there has been no attempt at laying things out  / styling nicely \- th
 
 Clicking on spots in the Ramachandran plot should change the origin. Using the usual Moorhen controls should update the origin text displayed under the molecules/maps widgets. The map and molecule buttons should work.
 
-The full code for this example is available at [https://github.com/stuartjamesmcnicholas/MoorhenEmbedNext](https://github.com/stuartjamesmcnicholas/MoorhenEmbedNext)
+The full code for this example is available at [https://github.com/moorhen-coot/MoorhenEmbedNext](https://github.com/moorhen-coot/MoorhenEmbedNext)
 
 If you download the example you can try changing the Ramachandran plot for a different analysis widget. They don’t all perform perfectly at the moment, and some cannot be drawn at the same time. The exporting of the validation widget is very new and experimental.
 
@@ -1206,9 +1206,9 @@ This might be useful if there’s a bug/missing feature in the Moorhen npm modul
   * [https://moorhen-coot.github.io/wiki/2023/07/06/Using-Moorhen-in-a-React-app.html](https://moorhen-coot.github.io/wiki/2023/07/06/Using-Moorhen-in-a-React-app.html)  
   * [https://moorhen-coot.github.io/wiki/2023/11/02/Fetch-data-from-Moorhen-in-a-react-app.html](https://moorhen-coot.github.io/wiki/2023/11/02/Fetch-data-from-Moorhen-in-a-react-app.html)   
 * Example projects:  
-  * [https://github.com/stuartjamesmcnicholas/moorhen-dist](https://github.com/stuartjamesmcnicholas/moorhen-dist)  
-  * [https://github.com/stuartjamesmcnicholas/MinimalEmbeddedMoorhen](https://github.com/stuartjamesmcnicholas/MinimalEmbeddedMoorhen)  
-  * [https://github.com/stuartjamesmcnicholas/MoorhenEmbedNext](https://github.com/stuartjamesmcnicholas/MoorhenEmbedNext)  
+  * [https://github.com/moorhen-coot/moorhen-dist](https://github.com/moorhen-coot/moorhen-dist)  
+  * [https://github.com/moorhen-coot/MinimalEmbeddedMoorhen](https://github.com/moorhen-coot/MinimalEmbeddedMoorhen)  
+  * [https://github.com/moorhen-coot/MoorhenEmbedNext](https://github.com/moorhen-coot/MoorhenEmbedNext)  
 * Class/function documentation:  
   * [https://moorhen-coot.github.io/Moorhen/](https://moorhen-coot.github.io/Moorhen/) 
 
