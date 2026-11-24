@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Moorhen wiki has moved</title>
+<meta name="description" content="The Moorhen wiki has moved. Tutorials and developer guides are now at moorhen.org/docs.">
+<link rel="icon" href="MoorhenLogo.png">
+<style>
+    :root {
+        color-scheme: light dark;
+        --bg: #fff;
+        --text: #2b2b2b;
+        --muted: #5b6570;
+        --border: #ddd;
+        --link: #34495e;
+        --card-bg: #fff;
+        --button-bg: #2c3e50;
+        --button-bg-hover: #1a252f;
+    }
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --bg: #1b1e22;
+            --text: #dcdcdc;
+            --muted: #9aa7b4;
+            --border: #3a3f45;
+            --link: #8fb3d9;
+            --card-bg: #24282d;
+            --button-bg: #3a6ea5;
+            --button-bg-hover: #4c85c1;
+        }
+    }
+    body {
+        font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: var(--text);
+        background: var(--bg);
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 0 1.5rem 3rem;
+        line-height: 1.6;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1.5rem 0;
+        border-bottom: 1px solid var(--border);
+        margin-bottom: 2rem;
+    }
+    header img { height: 48px; }
+    header span { font-size: 1.4rem; font-weight: 600; }
+    h1 { font-size: 1.8rem; line-height: 1.25; margin: 0 0 1rem; }
+    h2 { font-size: 1.1rem; margin: 2.5rem 0 0.75rem; }
+    a { color: var(--link); }
+    .button {
+        display: inline-block;
+        margin: 0.75rem 0 0;
+        padding: 0.7rem 1.2rem;
+        border-radius: 6px;
+        background: var(--button-bg);
+        color: #fff;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    .button:hover { background: var(--button-bg-hover); }
+    ul.moved {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: var(--card-bg);
+    }
+    ul.moved li { padding: 0.75rem 1rem; }
+    ul.moved li + li { border-top: 1px solid var(--border); }
+    ul.moved a { font-weight: 600; }
+    ul.moved span { display: block; color: var(--muted); font-size: 0.95rem; }
+    footer {
+        margin-top: 2.5rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 0.95rem;
+    }
+</style>
+</head>
+<body>
+<header>
+    <img src="MoorhenLogo.png" alt="Moorhen logo">
+    <span>Moorhen Wiki</span>
+</header>
+
+<main>
+    <h1>The Moorhen wiki has moved</h1>
+    <p>
+        Moorhen's tutorials and developer guides now live in the Moorhen
+        documentation at <a href="https://moorhen.org/docs/">moorhen.org/docs</a>.
+        This wiki is no longer updated, and its articles have been removed.
+    </p>
+    <a class="button" href="https://moorhen.org/docs/">Go to the Moorhen documentation</a>
+
+    <h2>Where to find things</h2>
+    <ul class="moved">
+        <li>
+            <a href="https://moorhen.org/docs/guides/user/index.html">User Guide</a>
+            <span>Getting started and Tutorial 1 (fixing up the cyclin-dependent kinase).</span>
+        </li>
+        <li>
+            <a href="https://moorhen.org/docs/guides/developer/index.html">Developer Guide</a>
+            <span>Embedding Moorhen in your own site or React app with the Moorhen WebComponent.</span>
+        </li>
+        <li>
+            <a href="https://moorhen.org/docs/api/index.html">API Reference</a>
+            <span>Reference documentation for Moorhen's classes, modules and functions.</span>
+        </li>
+        <li>
+            <a href="https://moorhen.org/gallery">Moorhen Gallery</a>
+            <span>Images made with Moorhen.</span>
+        </li>
+    </ul>
+</main>
+
+<footer>
+    Looking for an older wiki article? The last published versions are kept in the
+    <a href="https://github.com/moorhen-coot/wiki/tree/fd9e42c/blog/_posts">repository history on GitHub</a>.
+</footer>
+</body>
+</html>
