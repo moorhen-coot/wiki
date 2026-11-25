@@ -20,7 +20,8 @@ whole deployment.
 
 The Jekyll blog was removed, but its articles are kept for archive as plain
 Markdown in `blog/_posts/`, with their screenshots in `images/`. They are not
-rendered by the site and nothing on the site links to them.
+rendered by the site; the footer of the migration page links to that folder on
+GitHub.
 
 Every article starts with a warning: they are outdated and must not be used
 with Moorhen 1.0 or later.
