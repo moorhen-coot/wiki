@@ -4,6 +4,15 @@ title: "Moorhen Tutorial 1: Fix up the Cyclin-Dependent Kinase"
 date: Tue 3 Sep 14:41:45 GMT 2024
 ---
 
+# ⚠️ ARCHIVED — NOT FOR MOORHEN 1.0 OR LATER ⚠️
+
+> [!WARNING]
+> **This article is outdated and is kept for archive only.**
+> **Do not use it with Moorhen 1.0 or later.**
+> For current documentation, see <https://moorhen.org/docs/>.
+
+---
+
 Welcome to Moorhen ("Coot on the Web").
 
 ## Getting Started

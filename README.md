@@ -6,8 +6,8 @@ This repository now only serves a migration page at <https://moorhen-coot.github
 
 - `index.html` is the migration page.
 - `404.html` redirects every old wiki URL to the migration page.
-- `images/` holds the screenshots the old articles used. They are kept because
-  pages elsewhere may still link to them through `raw.githubusercontent.com`.
+- `images/` holds the screenshots the old articles used. The archived articles
+  and pages elsewhere link to them through `raw.githubusercontent.com`.
 
 ## Deployment
 
@@ -16,8 +16,11 @@ GitHub Pages serves the root of the `main` branch as plain static files
 Jekyll build off. There is no GitHub Actions workflow: pushing to `main` is the
 whole deployment.
 
-## Old articles
+## Old articles (archive)
 
-The Jekyll blog and its articles were removed. The last published versions are
-in the history at commit
-[`fd9e42c`](https://github.com/moorhen-coot/wiki/tree/fd9e42c/blog/_posts).
+The Jekyll blog was removed, but its articles are kept for archive as plain
+Markdown in `blog/_posts/`, with their screenshots in `images/`. They are not
+rendered by the site and nothing on the site links to them.
+
+Every article starts with a warning: they are outdated and must not be used
+with Moorhen 1.0 or later.

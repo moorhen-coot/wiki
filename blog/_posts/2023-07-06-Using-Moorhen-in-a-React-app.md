@@ -4,6 +4,15 @@ title: "Using Moorhen in a react app"
 date: Thu 6 Jul 20:59:21 GMT 2023
 ---
 
+# ⚠️ ARCHIVED — NOT FOR MOORHEN 1.0 OR LATER ⚠️
+
+> [!WARNING]
+> **This article is outdated and is kept for archive only.**
+> **Do not use it with Moorhen 1.0 or later.**
+> For current documentation, see <https://moorhen.org/docs/>.
+
+---
+
 ## Scope
 
 [Moorhen](https://moorhen-coot.github.io/wiki/2023/03/22/What-is-Moorhen.html) is built on React, and has been designed to be readily inserted

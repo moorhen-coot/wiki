@@ -4,6 +4,15 @@ title: "Creating Figures with Moorhen"
 date: Fri 3 Nov 16:08:00 GMT 2023
 ---
 
+# ⚠️ ARCHIVED — NOT FOR MOORHEN 1.0 OR LATER ⚠️
+
+> [!WARNING]
+> **This article is outdated and is kept for archive only.**
+> **Do not use it with Moorhen 1.0 or later.**
+> For current documentation, see <https://moorhen.org/docs/>.
+
+---
+
 ## Introduction
 
 This tutorial will explain how to make high-quality figures of molecular models, maps, and analysis/validation markup with Moorhen.

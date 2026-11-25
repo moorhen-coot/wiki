@@ -4,6 +4,15 @@ title: "Fetch data from Moorhen in your React app"
 date: Thu 2 Nov 16:33:00 GMT 2023
 ---
 
+# ⚠️ ARCHIVED — NOT FOR MOORHEN 1.0 OR LATER ⚠️
+
+> [!WARNING]
+> **This article is outdated and is kept for archive only.**
+> **Do not use it with Moorhen 1.0 or later.**
+> For current documentation, see <https://moorhen.org/docs/>.
+
+---
+
 ## Background and requirements
 
 This tutorial is part of a series that explains how to integrate Moorhen into a react app:

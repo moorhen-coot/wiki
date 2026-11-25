@@ -4,6 +4,15 @@ title: "What is Moorhen?"
 date: Wed 22 Mar 17:41:45 GMT 2023
 ---
 
+# ⚠️ ARCHIVED — NOT FOR MOORHEN 1.0 OR LATER ⚠️
+
+> [!WARNING]
+> **This article is outdated and is kept for archive only.**
+> **Do not use it with Moorhen 1.0 or later.**
+> For current documentation, see <https://moorhen.org/docs/>.
+
+---
+
 Moorhen is "Coot on the Web"!
 
 Q: OK, so why "Moorhen"?
